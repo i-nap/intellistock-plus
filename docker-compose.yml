@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: intellistock-db
+    environment:
+      POSTGRES_DB: intellistock
+      POSTGRES_USER: intellistock
+      POSTGRES_PASSWORD: intellistock
+    ports:
+      - "5433:5432"
+    volumes:
+      - intellistock_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  intellistock_data:

@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.iml
+
+# Env files — see backend/.env.example and frontend/.env.example
+.env
+.env.local

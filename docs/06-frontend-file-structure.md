@@ -1,0 +1,115 @@
+# Frontend File Structure
+
+Use this structure unless the project already has a better established structure.
+
+```txt
+frontend/
+  src/
+    app/
+      (auth)/
+        login/
+          page.tsx
+        register/
+          page.tsx
+      (dashboard)/
+        dashboard/
+          page.tsx
+        inventory/
+          page.tsx
+        products/
+          page.tsx
+        suppliers/
+          page.tsx
+        orders/
+          page.tsx
+        reports/
+          page.tsx
+      layout.tsx
+      page.tsx
+
+    components/
+      ui/
+      common/
+        app-sidebar.tsx
+        app-header.tsx
+        page-header.tsx
+        data-table.tsx
+        empty-state.tsx
+        confirm-dialog.tsx
+        status-badge.tsx
+      dashboard/
+        metric-card.tsx
+        stock-trend-chart.tsx
+        reorder-alerts-card.tsx
+      inventory/
+        inventory-table.tsx
+        inventory-form.tsx
+        stock-adjustment-dialog.tsx
+      products/
+        product-table.tsx
+        product-form.tsx
+      suppliers/
+        supplier-table.tsx
+        supplier-form.tsx
+      orders/
+        order-table.tsx
+        order-form.tsx
+
+    constants/
+      api-routes.ts
+      app-routes.ts
+      query-keys.ts
+      roles.ts
+      permissions.ts
+      status.ts
+      theme.ts
+      messages.ts
+
+    features/
+      auth/
+        api.ts
+        hooks.ts
+        schemas.ts
+        types.ts
+      inventory/
+        api.ts
+        hooks.ts
+        schemas.ts
+        types.ts
+        utils.ts
+      products/
+        api.ts
+        hooks.ts
+        schemas.ts
+        types.ts
+      suppliers/
+        api.ts
+        hooks.ts
+        schemas.ts
+        types.ts
+      orders/
+        api.ts
+        hooks.ts
+        schemas.ts
+        types.ts
+      dashboard/
+        api.ts
+        hooks.ts
+        types.ts
+
+    lib/
+      api-client.ts
+      auth.ts
+      date.ts
+      formatters.ts
+      utils.ts
+      validations.ts
+
+    types/
+      api.ts
+      pagination.ts
+      user.ts
+
+    styles/
+      globals.css
+```
